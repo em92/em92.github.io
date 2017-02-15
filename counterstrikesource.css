@@ -1,0 +1,11 @@
+body {
+	margin: 20px;
+}
+
+h1 {
+	margin-bottom: 20px;
+}
+
+#coauthor_projects li:not(:last-child) {
+	padding: 0px 0px 10px;
+}
