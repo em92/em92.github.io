@@ -1,8 +1,9 @@
-baseURL = "https://drewdevault.com/"
-title = "Drew DeVault's blog"
+baseURL = "https://em92.github.io/"
+title = "Евгений Молотов"
 pygmentsUseClasses = true
 uglyurls = true
 disablePathToLower = true
+defaultContentLanguage = "ru"
 
 [permalinks]
 blog = "/:year/:month/:day/:filename"

@@ -3,9 +3,9 @@
 <h1>
   {{$.Title}}
   <small>
-    <span class="date">{{.Date.Format "January 2, 2006"}}</span>
-    on
-    <span class="site"><a href="{{.Site.BaseURL}}">{{.Site.Title}}</a></span>
+    <span class="date">Опубликовано {{.Date.Day }} {{ index $.Site.Data.mois (printf "%d" .Date.Month) }} {{ .Date.Year }}</span>
+    в блоге
+    <span class="site"><a href="{{.Site.BaseURL}}">Евгения Молотова</a></span>
   </small>
 </h1>
 
@@ -16,12 +16,8 @@
 </main>
 
 <section class="comment">
-  {{ if not .Params.nocomment }}
-  <p>
-  Have a comment on one of my posts? Start a discussion in my public inbox by
-  sending an email to
-  <a href="mailto:~sircmpwn/public-inbox@lists.sr.ht">~sircmpwn/public-inbox@lists.sr.ht</a>
-  [<a href="https://man.sr.ht/lists.sr.ht/etiquette.md">mailing list etiquette</a>]
+  {{ if .Params.comment_tg_url }}
+  <p><a href="{{ .Params.comment_tg_url }}">Оставить комментарий на моем Telegram-канале</a></p>
   {{ end }}
 </section>
 

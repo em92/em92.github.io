@@ -6,7 +6,7 @@
 
     {{ range (where (where .Site.RegularPages "Section" "blog") "Params.nohtml" "!=" "true") }}
     <div class="article">
-      <span class="date">{{.Date.Format "January 2, 2006"}}</span>
+      <span class="date">{{.Date.Day }} {{ index $.Site.Data.mois (printf "%d" .Date.Month) }} {{ .Date.Year }}</span>
       <a href="{{.Permalink}}">{{.Title}}</a>
     </div>
     {{ end }}
@@ -14,36 +14,23 @@
 
   <aside>
     <img
-      src="https://drewdevault.com/avatar-148.jpg"
-      alt="My avatar: an astronaut in a spacesuit with a school of fish and the moon visible in the reflection on their visor"
+      src="/avatar-460.jpg"
+      alt="Кадр из видео, показанного во время вмешательства в эфир телеканалов WGN-TV и WTTW (1987)"
       width="148" height="148" />
 
     <div class="text-center">
       <a class="rss" href="/blog/index.xml">rss</a>
       ·
       <a href="misc.html">misc</a>
-      ·
-      <a href="gemini://drewdevault.com">gemini</a>
     </div>
 
     <dl class="external-links">
       <dt>email</dt>
-      <dd><a href="mailto:sir@cmpwn.com">sir@cmpwn.com</a></dd>
-      <dt>sourcehut</dt>
-      <dd><a href="https://sr.ht/~sircmpwn">~sircmpwn</a></dd>
-      <dt>peertube</dt>
-      <dd><a href="https://spacepub.space/video-channels/sircmpwn">spacepub.space</a></dd>
-      <dt>pgp</dt>
-      <dd><a href="/publickey.txt">7BC79407090047CA</a></dd>
+      <dd><a href="mailto:eugene.molotov@yandex.ru">eugene.molotov@yandex.ru</a></dd>
+      <dt>github</dt>
+      <dd><a href="https://github.com/em92">em92</a></dd>
       <dt>donate</dt>
-      <dd><a href="https://drewdevault.com/donate">fosspay</a></dd>
+      <dd><a href="https://liberapay.com/em92">liberapay</a></dd>
     </dl>
-
-    <small>
-      Before reaching out to me, be aware that I get many emails, and my typical
-      response time is days or weeks. Please keep that in mind before sending
-      me a question that could be answered with a web search, reading a man
-      page, asking an on-topic IRC channel, etc.
-    </small>
   </aside>
 </main>

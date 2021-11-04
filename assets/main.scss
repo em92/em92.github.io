@@ -82,12 +82,13 @@ article {
       max-width: calc(100% - 2rem);
     }
   }
+}
 
-  .comment {
-    margin: 2rem auto 0;
-    max-width: 80%;
-    color: #333;
-  }
+.comment {
+  text-align: center;
+  margin: 2rem auto 0;
+  max-width: 100%;
+  color: #333;
 }
 
 .footnotes {
