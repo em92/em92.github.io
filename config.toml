@@ -1,7 +1,7 @@
-baseURL = "https://em92.github.io/"
+baseURL = "https://em230418.github.io/"
 title = "Евгений Молотов"
 pygmentsUseClasses = true
-uglyurls = true
+uglyurls = false
 disablePathToLower = true
 defaultContentLanguage = "ru"
 
